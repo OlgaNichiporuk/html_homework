@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background: #F5F5F5;
+    ;
+}
+
+.main_container {
+    width: 3816px;
+    height: 7366px;
+}
+
+#container_forms {
+    display: flex;
+}
+
+.container {
+    width: 480px;
+    height: 502px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+}
+
+.container1 {
+    margin-top: 325px;
+}
+
+.container2 {
+    margin-top: 325px;
+    margin-left: 63px;
+}
+
+.image_password {
+    display: flex;
+}
+
+.image_close {
+    padding: 24px 24px 0 424px;
+    width: 32px;
+}
+
+h2 {
+    color: #685ED6;
+    font-family: Manrope;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 32px;
+    padding-top: 49px;
+    text-align: center;
+}
+
+.checkbox {
+    margin: 32px 70px -17px 70px;
+    width: 340px;
+    height: 40px;
+    background: #F7F7FD;
+    border-radius: 4px;
+    color: #1D2530;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.checkbox .phone {
+    padding: 8px 20px;
+}
+
+.checkbox .password {
+    width: 224px;
+    padding: 8px 20px;
+}
+
+
+#img1 {
+    padding-left: 20px;
+}
+
+h3 {
+    color: #605DEC;
+    text-align: right;
+    font-family: Nunito Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    padding: 32px 70px 32px 303px;
+}
+
+.button {
+    border-radius: 6px;
+    background: #685ED6;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+    padding: 12px 32px;
+    margin: 32px 70px 139px 70px;
+    color: #FFF;
+    text-align: center;
+    font-feature-settings: 'salt' on, 'liga' off;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.button_2 {
+    margin-top: 215px;
+}
+
+.checkbox>div {
+    margin-top: 17px;
+    width: 340px;
+    height: 40px;
+    background: #F7F7FD;
+    border-radius: 4px;
+    color: #1D2530;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.checkbox_3 {
+    display: flex;
+}
+
+.checkbox_4 {
+    display: flex;
+}
+
+#img2 {
+    padding-left: 20px;
+}
+
+#img3 {
+    padding-left: 20px;
+}
+
+.container_first {
+
+    background-image: url('./images//cont_first_back.svg');
+    width: 1440px;
+    height: 809px;
+    margin-top: 150px;
+}
+
+.mobile_img {
+    margin-left: 105px;
+    margin-top: -259px;
+    display: inline-block;
+    background-image: url(./images/mobile_img.svg);
+    width: 690px;
+    height: 555px;
+    fill: rgba(242, 247, 255, 0.50);
+    backdrop-filter: blur(50px);
+}
+
+.logo_menu {
+    display: flex;
+    flex-direction: row;
+    padding-top: 44px;
+
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    margin-left: 734px;
+    color: #1D2530;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    width: 540px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu .violet {
+    color: #685ED6;
+}
+
+.logo_menu .logo {
+    background-image: url(./images/logo.svg);
+    width: 33px;
+    margin-left: 157px;
+}
+
+.logo span {
+    padding-left: 45px;
+    color: #1D2530;
+    font-family: Manrope;
+    font-size: 28.111px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21.083px;
+    width: 85px;
+}
+
+
+.hidder_text {
+    padding-top: 147px;
+    padding-left: 165px;
+}
+
+.hidder_text h1 {
+    color: #1D2530;
+    font-feature-settings: 'salt' on, 'liga' off;
+    font-family: Manrope;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 60px;
+}
+
+.hidder_text span {
+    padding-top: 24px;
+    color: var(--black, #1D2530);
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+}
+
+.button_connect {
+    margin: 32px 165px;
+    text-align: center;
+    display: inline-flex;
+    padding: 12px 32px;
+    align-items: center;
+    justify-content: center;
+    width: 177px;
+    height: 48px;
+    border-radius: 6px;
+    background: #685ED6;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+    color: #FFF;
+    font-feature-settings: 'salt' on, 'liga' off;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}

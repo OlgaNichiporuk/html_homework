@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>landing page</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/library.css">
+    <link rel="stylesheet" href="css/mobile.css">
 </head>
 
 <body>
-    <div class="header">
+    <div class="header hidden">
         <div class="container">
             <div class="header-content">
                 <div class="logo">
@@ -24,8 +26,9 @@
                 </div>
             </div>
             <div class="header-nav">
-                <div class="button">Log in</div>
-                <div class="button button-primary">Sign up</div>
+                <div class="button buttonAuth" id="LogIn">Log in</div>
+                <div class="button button-primary buttonAuth" id="SingUp">Sign up</div>
+                <div class="avatar" id="icon_avatar"><img src="./images/avatar.svg"></div>
             </div>
         </div>
     </div>
@@ -57,65 +60,103 @@
                     <img src="./images/zap.svg">
                     <h3>Basic plan</h3>
                     <h1>$10/mth</h1>
-                <div class="supporting-text">Billed annually.</div>
-                
-                <ul>
-                    <li>Access to all basic features</li>
-                    <li>Basic reporting and analytics</li>
-                    <li>Up to 10 individual users</li>
-                    <li>20GB individual data each user</li>
-                    <li>Basic chat and email support</li>
-                </ul>
-            </div>
-                <div class="pricing-card__footer">
-                    <div class="button button-primary">Get started</div>
+                    <div class="supporting-text">Billed annually.</div>
+
+                    <ul>
+                        <li>Access to all basic features</li>
+                        <li>Basic reporting and analytics</li>
+                        <li>Up to 10 individual users</li>
+                        <li>20GB individual data each user</li>
+                        <li>Basic chat and email support</li>
+                    </ul>
                 </div>
-                
+                <div class="pricing-card__footer">
+                    <div class="button button-primary hover">Get started</div>
+                </div>
+
             </div>
 
             <div class="pricing-card">
                 <div class="pricing-card__content">
                     <img src="./images/zap2.svg">
-                   <h3>Business plan</h3>
+                    <h3>Business plan</h3>
                     <h1>$20/mth</h1>
-                <div class="supporting-text">Billed annually.</div>
-                
-                <ul>
-                    <li>200+ integrations</li>
-                    <li>Advanced reporting and analytics</li>
-                    <li>Up to 20 individual users</li>
-                    <li>20GB individual data each user</li>
-                    <li>Basic chat and email support</li>
-                </ul>
-            </div>
-                <div class="pricing-card__footer">
-                    <div class="button button-primary">Get started</div>
+                    <div class="supporting-text">Billed annually.</div>
+
+                    <ul>
+                        <li>200+ integrations</li>
+                        <li>Advanced reporting and analytics</li>
+                        <li>Up to 20 individual users</li>
+                        <li>20GB individual data each user</li>
+                        <li>Basic chat and email support</li>
+                    </ul>
                 </div>
-                
+                <div class="pricing-card__footer">
+                    <div class="button button-primary active">Get started</div>
+                </div>
+
             </div>
 
             <div class="pricing-card">
                 <div class="pricing-card__content">
                     <img src="./images/zap3.svg">
-                    <h3 >Enterprise plan</h3>
+                    <h3>Enterprise plan</h3>
                     <h1>$40/mth</h1>
-                <div class="supporting-text">Billed annually.</div>
-                
-                <ul>
-                    <li>Advanced custom fields</li>
-                    <li>Audit log and data history</li>
-                    <li>Unlimited individual users</li>
-                    <li>Unlimited individual data</li>
-                    <li>Personalised+priotity service</li>
-                </ul>
-            </div>
-                <div class="pricing-card__footer">
-                    <div class="button button-primary">Get started</div>
+                    <div class="supporting-text">Billed annually.</div>
+
+                    <ul>
+                        <li>Advanced custom fields</li>
+                        <li>Audit log and data history</li>
+                        <li>Unlimited individual users</li>
+                        <li>Unlimited individual data</li>
+                        <li>Personalised+priotity service</li>
+                    </ul>
                 </div>
-                
+                <div class="pricing-card__footer">
+                    <div class="button button-primary disabled">Get started</div>
+                </div>
+
             </div>
         </div>
     </section>
+    <div class="fade" id="frame">
+        <div class="modal">
+            <div class="content payment">
+                <section class="card">
+            </div>
+            <div class="icon">
+                <img src="./images/lockNew.svg">
+            </div>
+            <div class="info_payment">
+                <div class="info_text">Please enter your password</div>
+                <div class="info_second_text">Enter your password to make this change.</div>
+                <div class="input_info">
+                    <form>
+                        <div class="input_first">
+                            <label for="">Email or username</label>
+                            <input type="email" id="email" class="input_main"  placeholder="olivia@untitledui.com">
+
+                        </div>
+                        <div class="input_first">
+                            <label for="">Password</label>
+                            <input type="password" id='password' class="input_main" placeholder="••••••••">
+
+                            <div class="hint_text" id="hint">Проверьте правильность данных ещё раз.</div>
+                        </div>
+                    </form>
+                    <div class="footer">
+                        <div class="button_1 close_frame" id="close">Cancel</div>
+                        <div class="button_2" id="button_LogIn">Login</div>
+                    </div>
+
+
+
+                </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="./js.js"></script>
 </body>
 
 </html>
